@@ -22,5 +22,9 @@ Ext.define('BookDoc.view.main.MainController', {
         if (choice === 'yes') {
             //
         }
-    }
+    },
+
+    openPreferences: function () {
+      Ext.Msg.confirm('Confirm', 'Open preference?', 'onConfirm', this);
+   }
 });
